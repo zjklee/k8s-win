@@ -146,7 +146,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-    app: flannel
+      app: flannel
   template:
     metadata:
       labels:
@@ -229,7 +229,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-    app: flannel
+      app: flannel
   template:
     metadata:
       labels:
@@ -313,7 +313,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-    app: flannel
+      app: flannel
   template:
     metadata:
       labels:
@@ -397,7 +397,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-    app: flannel
+      app: flannel
   template:
     metadata:
       labels:
@@ -481,7 +481,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-    app: flannel
+      app: flannel
   template:
     metadata:
       labels:
