@@ -150,6 +150,9 @@ spec:
         tier: node
         app: flannel
     spec:
+      selector:
+        matchLabels:
+        app: flannel
       hostNetwork: true
       nodeSelector:
         beta.kubernetes.io/arch: amd64
@@ -225,6 +228,9 @@ metadata:
     tier: node
     app: flannel
 spec:
+  selector:
+    matchLabels:
+    app: flannel
   template:
     metadata:
       labels:
@@ -306,6 +312,9 @@ metadata:
     tier: node
     app: flannel
 spec:
+  selector:
+    matchLabels:
+    app: flannel
   template:
     metadata:
       labels:
