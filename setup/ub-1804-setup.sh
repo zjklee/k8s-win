@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DOCKER_VERSION="5:19.03.0~3-0~ubuntu-bionic"
-KUBERNETES_VERSION="1.15.1-00"
+KUBERNETES_VERSION="1.21.1-00"
 
 # turn off swap - for the Kubelet
 swapoff -a 
