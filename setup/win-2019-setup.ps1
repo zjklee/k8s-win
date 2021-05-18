@@ -1,9 +1,9 @@
 $DOCKER_VERSION="19.03.0"
 
 # disable security :)
-Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon' -name Shell -Value 'PowerShell.exe -noExit'
-Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
-Uninstall-WindowsFeature Windows-Defender
+#Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon' -name Shell -Value 'PowerShell.exe -noExit'
+#Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
+#Uninstall-WindowsFeature Windows-Defender
 
 # install Docker
 Install-WindowsFeature -Name Containers
