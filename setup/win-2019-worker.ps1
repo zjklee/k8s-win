@@ -2,7 +2,7 @@ Param(
     [parameter(Mandatory = $true)] $ManagementIP
 )
 
-$KUBERNETES_VERSION="1.21.1"
+$KUBERNETES_VERSION="1.19.9"
 
 Start-Service docker  
 
@@ -83,7 +83,7 @@ mv C:\k\nssm\nssm-2.24-101-g897c7ad\win64\*.exe C:\k
 
 # register & start kube-proxy
 .\nssm.exe install $KubeProxySvc C:\k\kube-proxy.exe
-.\nssm.exe set $KubeProxySvc AppDirectory c:\k
+.\nssm.exe set $KubeProxySvc AppDirectory C:\k
 GetSourceVip -ipAddress $ManagementIP -NetworkName $NetworkName
 $sourceVipJSON = Get-Content sourceVip.json | ConvertFrom-Json 
 $sourceVip = $sourceVipJSON.ip4.ip.Split("/")[0]
